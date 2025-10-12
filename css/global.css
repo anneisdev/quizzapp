@@ -1,3 +1,7 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
 }
@@ -10,8 +14,13 @@ button {
   background-color: white;
   border-bottom: 0.1em solid black;
   text-align: center;
-  padding: 8%;
-  font-size: 1.75em;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content {
+  padding-bottom: 25%;
 }
 
 .footer {
@@ -36,8 +45,26 @@ button {
   justify-content: center;
 }
 
+.footer__link:hover {
+  background-color: gray;
+}
+
+.footer__link:hover .footer__icon {
+  fill: black;
+}
+
+.footer__current {
+  background-color: lightgray;
+}
+
 .footer__icon {
   height: 75%;
   stroke: black;
   fill: none;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding-bottom: 120px;
+  }
 }

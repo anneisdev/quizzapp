@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script src="js/createForm.js" defer></script>
+    <title>Quiz Form</title>
+  </head>
+  <body>
+    <header class="header">Quiz App</header>
+
+    <main class="content">
+      <section class="create">
+        <form class="create__form" data-js="form">
+          <label class="create__titles">Your Question:</label>
+          <textarea
+            class="create__textfield"
+            maxlength="120"
+            name="question"
+          ></textarea>
+          <p class="create__characterlimit">120 <span>Characters left</span></p>
+
+          <label class="create__titles">Your Answer:</label>
+          <textarea
+            class="create__textfield"
+            maxlength="120"
+            name="answer"
+          ></textarea>
+          <p class="create__characterlimit">120 <span>Characters left</span></p>
+
+          <label class="create__titles">Tag:</label>
+          <input type="text" class="create__textinput" name="tag" />
+
+          <button type="submit" class="create__submit" name="submit">
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <section class="created">
+        <span>New Cards:</span>
+
+        <div class="card__container" data-js="card-container"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__link" href="index.html">
+        <svg
+          class="footer__icon"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+          <path
+            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+          />
+        </svg>
+      </a>
+      <a class="footer__link" href="bookmarks.html">
+        <svg
+          class="footer__icon"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+        </svg>
+      </a>
+      <a class="footer__link footer__current" href="form.html">
+        <svg
+          class="footer__icon"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 12h14" />
+          <path d="M12 5v14" />
+        </svg>
+      </a>
+      <a class="footer__link" href="profile.html">
+        <svg
+          class="footer__icon"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </a>
+    </footer>
+  </body>
+</html>

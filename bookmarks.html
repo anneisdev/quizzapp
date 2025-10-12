@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/card.css" />
+     <script src="js/index.js" defer></script>
     <title>Quiz Bookmarks</title>
   </head>
   <body>
     <header class="header">Quiz App</header>
 
-    <main>
-      <section class="card">
+    <main class="content">
+      <div class="card">
         <svg
-          class="card__icon"
+          class="card__bookmark"
           viewBox="0 0 24 24"
           fill="black"
           stroke="currentColor"
@@ -30,18 +31,19 @@
             the internet without the need for physical cables?
           </p>
           <p class="card__titles">Answer:</p>
-          <button class="card__button--show">Show Answer</button>
+          <button class="card__button">Show Answer</button>
         </div>
         <div class="card__left">
           <a class="card__tag">html</a>
           <a class="card__tag">css</a>
           <a class="card__tag">js</a>
         </div>
-      </section>
+      </div>
 
-      <section class="card">
+      <div class="card">
         <svg
-          class="card__icon"
+          class="card__bookmark"
+          data-js="bookmark"
           viewBox="0 0 24 24"
           fill="black"
           stroke="currentColor"
@@ -58,14 +60,14 @@
             the internet without the need for physical cables?
           </p>
           <p class="card__titles">Answer:</p>
-          <button class="card__button--show">Show Answer</button>
+          <button class="card__button">Show Answer</button>
         </div>
         <div class="card__left">
           <a class="card__tag">html</a>
           <a class="card__tag">css</a>
           <a class="card__tag">js</a>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">
@@ -83,7 +85,7 @@
           />
         </svg>
       </a>
-      <a class="footer__link" href="bookmarks.html">
+      <a class="footer__link footer__current" href="bookmarks.html">
         <svg
           class="footer__icon"
           viewBox="0 0 24 24"
@@ -92,6 +94,18 @@
           stroke-linejoin="round"
         >
           <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+        </svg>
+      </a>
+      <a class="footer__link" href="form.html">
+        <svg
+        class="footer__icon"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 12h14" />
+          <path d="M12 5v14" />
         </svg>
       </a>
       <a class="footer__link" href="profile.html">
