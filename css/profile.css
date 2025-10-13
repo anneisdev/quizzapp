@@ -1,3 +1,8 @@
+body {
+  background-color: white;
+  color: black;
+}
+
 .profile {
   padding-left: 2.5em;
   padding-right: 2.5em;
@@ -126,4 +131,21 @@
 
 input:checked + .modals__slider:before {
   transform: translateX(26px);
+}
+
+/* Darkmode */
+body.darkmode {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .profile {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .user {
+    justify-content: space-evenly;
+  }
 }

@@ -118,7 +118,5 @@ form.addEventListener("submit", (event) => {
   event.target.reset();
 });
 
-// textarea characters left
-
 // extra
 // dark mode in profile
